@@ -23,6 +23,7 @@ const Navbar = () => {
                 <AiOutlineSearch size = {20}/>
                 <input className="bg-transparent p-2 focus:outline-none w-full" type="text" placeholder="Search food" />
             </div>
+            
             {/* cart */}
             <button className="bg-black text-white hidden md:flex items-center py-2 rounded-xl">
                 <BsFillCartFill size = {20} className="mr-2" />Cart
