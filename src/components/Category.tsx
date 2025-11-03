@@ -1,5 +1,4 @@
-import React from 'react'
-import { category } from '../data/data.js'
+import { category } from '../data/data.ts'
 const Category = () => {
   console.log(category)
   return (
