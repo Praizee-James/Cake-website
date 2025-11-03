@@ -1,4 +1,4 @@
-import React from 'react'
+
 // import cakes from '../assets/YummyCake.jpg'
 const Hero = () => {
   return (
