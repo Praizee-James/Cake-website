@@ -5,6 +5,7 @@ import TopCards from './components/TopCards'
 import Cakes from './components/Cakes'
 import Category from './components/Category'
 const App = () => {
+  
   return (
     <div>
       <Navbar/>
