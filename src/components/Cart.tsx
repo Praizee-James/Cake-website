@@ -13,7 +13,7 @@ import { MdFavorite, MdHelp } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Navbar = () => {
+const Cart = () => {
   const [nav, setNav] = useState(false);
   const [cart, setCart] = useState(false);
   
@@ -42,17 +42,20 @@ const Navbar = () => {
     }
   ]);
 
-  const updateQuantity = (id, change) => {
-    setCartItems(cartItems.map(item => 
-      item.id === id 
+ const updateQuantity = (id: number, change: number) => {
+  setCartItems(
+    cartItems.map((item) =>
+      item.id === id
         ? { ...item, quantity: Math.max(1, item.quantity + change) }
         : item
-    ));
-  };
+    )
+  );
+};
 
-  const removeItem = (id) => {
-    setCartItems(cartItems.filter(item => item.id !== id));
-  };
+const removeItem = (id: number) => {
+  setCartItems(cartItems.filter((item) => item.id !== id));
+};
+
 
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   const deliveryFee = 2.99;
@@ -283,4 +286,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Cart;

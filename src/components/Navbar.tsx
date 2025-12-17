@@ -16,7 +16,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [cart, setCart] = useState(false);
 
-    // Sample cart items using actual data
+  
     const [cartItems, setCartItems] = useState([
         {
             ...data[0],
